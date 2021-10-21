@@ -1,0 +1,99 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: slategrey;
+    padding: 5px;
+    color: black;
+
+}
+
+h1, h2 {
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#headshot {
+    border: 1px solid #808080;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 8px;
+    max-width: 50px;
+}
+
+.experience {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color: #222;
+}
+
+.experience .title {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: #202020;
+    color: lightblue;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#menu li {
+    display: inline;
+    padding: 5px;
+    background-color: black;
+}
+
+#menu li a {
+    color: white !important;
+    text-decoration: none;
+}
+
+#menu li.active {
+    background-color: darkslateblue;
+}
+
+#menu{
+    float: right;
+}
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+
+header #menu {
+    margin-left: auto;
+}
+
+/*header #headshot, header #sitename, header #menu {
+    display: inline;
+    vertical-align: middle;
+} */
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: auto 200px;
+    grid-gap: 8px;
+}
+
+#formInfo {
+    font-size: 14px;
+    font-style: italic;
+}

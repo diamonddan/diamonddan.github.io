@@ -1,0 +1,84 @@
+<html>
+    <head>
+
+        <title>Daniel McNary's Resume Page</title>
+
+        <link rel="stylesheet" href="site.css">
+
+    </head>
+
+    <body>
+    <div class="container">
+        <header>
+            <img id="headshot" src="/img/dancing-bird.gif" alt="Dancing Bird" />
+            <h1 id="siteName">Daniel McNary</h1>
+            
+            <ul id="menu">
+                <li class="active"><a href="index.html"html">Home</a></li>
+                <li><a href="About.html"html">About</a></li>
+                <li><a href="Privacy.html"html">Privacy</a></li>
+            </ul>
+        </header>
+        <main>
+        <p><strong>Purpose:</strong> This is a resume (or CV) to help me get a job in web development.</p>
+        <h2>Experience</h2>
+        <div class="experience">
+            <p class="title">CVS - Healthcare Company - 2012-2019
+            <p>Worked register and did inventory.</p>
+        </div>
+        <div class="experience">
+            <p class="title">McDonalds - Not a Healthcare Company - 2005-2012</p>
+            <p>Burger and Fry Cook.</p>
+            </p>
+        </div>
+        <div class="experience">
+            <p class="title">Mowing lawns - 2000 - 2005</p>
+            <p>Mowing lawns for my dad.</p>
+            </p>
+        </div>
+        </main>
+        <aside>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <div id="formInfo"></div>
+                <div>
+                    <label for="fullName">Full Name</label>
+                </div>
+                <div>
+                    <input id="fullName" type="text"/> 
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input id="email" type="email"/>   
+                </div>
+                <div>
+                    <label for="subject">Subject</label>
+                </div>
+                <div>
+                    <select id="subject">
+                        <option>Job Offer</option>
+                        <option>Personal Message</option>
+                        <option>Complaint</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Message</label>
+                </div>
+                <div>
+                    <textarea id="msg" rows="4"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send Mail">
+                </div>
+            </form>
+        </aside>
+        <footer>
+           &copy; 2021 Copyright - Daniel McNary
+        </footer>
+    </div>
+    <script src="Contact.js"></script>
+    <script src="index.js"></script>
+    </body>
+</html>
